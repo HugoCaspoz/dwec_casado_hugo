@@ -1,12 +1,10 @@
-let n = Number(prompt("Dime un número"));
+let n = prompt("Dime un número");
 
-while (!n || n<=0){
+while (Number.isFinite(+numero)==false || numero==null || numero.trim()=='' || numero==NaN){
     n = Number(prompt("Dime un número"));
 }
 if(n%2==1){
     console.log("El número es impar");
-}else if (n%2==0){
+}else {
     console.log("El número es par");
-}else{
-    console.log("Error");
 }

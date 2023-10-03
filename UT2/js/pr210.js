@@ -1,13 +1,14 @@
-let n1 = Number(prompt("Número 1"));
-let n2 = Number(prompt("Número 2"));
-let n3 = Number(prompt("Número 3"));
-let n4 = Number(prompt("Número 4"));
-let n5 = Number(prompt("Número 5"));
 
-let array = [n1,n2,n3,n4,n5]
+let mayor=-Infinity;
+let menor=Infinity;
+for (let i=0; i<5; i++){
+    let n = prompt ("Dime un número")
+    if (n>mayor){
+        mayor=n;
+    }
+    if (n<menor){
+        menor=n;
+    }
+}
 
-array.sort(function(a,b){
-    return a-b;
-});
-
-console.log(`El mayor número es ${array[4]} y el menor ${array[0]}`);
+console.log(`El mayor número es ${mayor} y el menor ${menor}`);
