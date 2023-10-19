@@ -1,6 +1,6 @@
 let n = prompt("Dime un número");
 
-while (Number.isFinite(+numero)==false || numero==null || numero.trim()=='' || numero==NaN){
+while (Number.isFinite(+n)==false || n==null || n.trim()=='' || n==NaN || Number(n)<=0){
     n = Number(prompt("Dime un número"));
 }
 if(n%2==1){
