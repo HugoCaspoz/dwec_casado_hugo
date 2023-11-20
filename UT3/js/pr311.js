@@ -3,8 +3,7 @@ let min = prompt("minimo");
 let max = prompt("maximo");
 
 function ascendDescend(len, min, max) {
-    let cadena = "";
-    cadena = cadena.padEnd(len, minimoMaximo(min, max))
+    let cadena = "".padEnd(len, minimoMaximo(min, max))
     return cadena;
 }
 
