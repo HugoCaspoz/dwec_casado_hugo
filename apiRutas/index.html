@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="textoNoTraducido">
+        <h3 id="idiomaTexto">Texto a traducir:</h3>
+        <textarea rows="2" cols="50" id="texto"></textarea><br>
+
+        <label for="idiomaTexto">What language are you using?</label>
+        <input type="text" id="idiomadelTexto" ><br><br>
+
+        <label for="miCuadroDeTexto">What language do you want to translate it to?</label>
+        <input type="text" id="idiomaTraducir" name="miCuadroDeTexto"><br>
+        <button type="button" id="traducirTexto">Traducir</button>
+    </div>
+    <div id="traducido">
+        <p>Translation:</p>
+        <p id="textoTraducido"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

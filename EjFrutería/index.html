@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWars</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #FFCC29;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #206A5D;
+            color: white;
+            font-size: 7em;
+            height: 200px;
+            font-weight: 700;
+        }
+
+        #main {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        #products-section {
+            height: fit-content;
+            width: 70vw;
+            background-color: #FFCC29;
+            display: flex;
+            flex-wrap: wrap;
+            /* Permite que los elementos se envuelvan cuando no hay espacio */
+            justify-content: space-around;
+            /* Distribuye los elementos con espacio entre ellos */
+        }
+
+        #cart-section {
+            width: 30vw;
+            min-width: 350;
+            background-color: #e7bc2d;
+            border: solid black 1px;
+
+            
+        }
+
+        #pages {
+            width: 97vw;
+            min-width: 350;
+            background-color: #ac8c26;
+            display: flex;
+            flex-wrap: wrap;
+            /* Permite que los elementos se envuelvan cuando no hay espacio */
+            justify-content: space-around;
+            /* Distribuye los elementos con espacio entre ellos */
+            cursor: pointer;
+        }
+
+        .product {
+            width: 30%;
+            /* Establece el ancho de cada caja */
+            margin: 10px;
+            /* Agrega un margen entre las cajas */
+            background-color: rgb(241, 143, 14);
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn {
+            background-color: rgb(217, 245, 245);
+            cursor: pointer;
+        }
+
+        .cartProducts {
+            display: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0%;
+            /* Ajusta según sea necesario, como space-around o center */
+        }
+
+        .cart {
+            display: flex;
+            justify-content: space-between;
+            /* Ajusta según sea necesario, como space-around o center */
+        }
+
+        .caja {
+            width: 100%;
+            height: 60px;
+            /* Puedes ajustar la altura según sea necesario */
+            background-color: #f0f0f0;
+            text-align: center;
+            line-height: 50px;
+            /* Centra el contenido verticalmente */
+            border-bottom: solid black 1px;
+            border-top: solid black 1px;
+
+        }
+
+        .product-foto {
+            border-radius: 5px;
+            align-self: center;
+        }
+        .fruit-name{
+            background-color: rgb(94, 161, 149);
+        }
+        .price{
+            background-color: rgb(211, 93, 82);
+        }
+        .btn-add-product{
+            background-color: rgb(182, 182, 156);
+        }
+        .productos{
+            background-color: #afd1cb;
+            display: flex;
+            justify-content: space-between;
+            border: solid black 1px;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        }
+        p{
+            background-color: rgb(240, 70, 70);
+            height: 30px;
+            text-align: center;
+            border: solid black 1px;
+            padding-top: 0%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">Frutería San Andrés</div>
+    <div id="main">
+        <div id="products-section">
+            <!-- Aquí es donde tienes que insertar los productos -->
+        </div>
+        <div id="cart-section">
+            <div class="cart">
+                <div class="caja">Cantidad</div>
+                <div class="caja">Nombre</div>
+                <div class="caja">Precio</div>
+            </div>
+            <div id="cartProducts">                
+            </div>
+        </div>
+    </div>
+    <div id="pages">
+        <span id="prev">🢀</span>
+        <span id="numPag">Página 1 de 6</span>
+        <span id="next">🢂</span>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
